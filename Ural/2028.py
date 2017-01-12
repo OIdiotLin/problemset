@@ -1,0 +1,10 @@
+﻿print str(9)+' '+str(12)
+print '?..........v'
+print '>.>v>>Tv>>v.'
+print '.>.>@..>@^I.'
+print '.-..I..^A.-.'
+print '.^..+..^+.v<'
+print '.T..I..-A...'
+print '.^+T<..^<...'
+print '^.........@v'
+print '........#!A<'

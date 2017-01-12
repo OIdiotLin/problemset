@@ -1,0 +1,27 @@
+#include <iostream>
+#include <cmath>
+#include <set>
+using namespace std;
+int n,a,b,x,p;
+set<int> S;
+int main()
+{
+    cin>>n;
+    p=int(sqrt(n));
+    for (a=1;a<=p;a++) if (n%a==0)
+    {
+        b=n/a;
+        for (x=1;x<=n;x+=b)
+            if ((x+1)%a==0)
+                S.insert(x);
+        for (x=b-1;x<=n;x+=b)
+            if ((x-1)%a==0)
+                S.insert(x);
+    }
+    while (!S.empty())
+    {
+        cout<<*S.begin()<<endl;
+        S.erase(S.begin());
+    }
+    return 0;
+}
