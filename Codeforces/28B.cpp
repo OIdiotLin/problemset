@@ -81,3 +81,4 @@ int main() {
 	cout << (isUnconnected ? "NO" : "YES") << endl;
 	return 0;
 }
+
