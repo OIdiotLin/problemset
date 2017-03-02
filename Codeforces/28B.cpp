@@ -18,7 +18,7 @@ public:
 		_isConnected = new bool*[_vertexCount + 1];
 		for (int i = 0;i <= _vertexCount;i++)
 			_isConnected[i] = new bool[_vertexCount];
-		memset(_isConnected, 0, sizeof(_isConnected));
+		memset(_isConnected, false, sizeof(_isConnected));
 		_edgeCount = 0;
 	}
 
@@ -51,6 +51,7 @@ public:
 
 int main() {
 	ios::sync_with_stdio(false);
+	//freopen("28B.in", "r", stdin);
 	int size;
 	cin >> size;
 	Graph graph = Graph(size);
